@@ -17,6 +17,7 @@ public class largestInArray {
 
         System.out.println("Enter the array: ");
         double[][] arr = new double[rows][cols];
+        // for loop to prompt the user to add values to the array
         for (int c = 0; c < rows; c++) {
             for (int d = 0; d < cols; d++) {
                 arr[c][d] = input.nextDouble();
@@ -43,7 +44,7 @@ public class largestInArray {
         }
 
         double maxElement = a[0][0];
-        
+        // locating and setting the maxElement variable 
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
                 if (a[i][j] > maxElement) {
